@@ -1,0 +1,82 @@
+.answer {
+  border-radius: 5px;
+}
+
+.answer:hover {
+  cursor: pointer;
+}
+
+.answer h2 {
+  color: #fff;
+  font-size: 14pt;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.answer h3 {
+  color: #333;
+  font-size: 14pt;
+}
+
+.front {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.correct,
+.incorrect {
+  background-color: #1fb157;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.incorrect {
+  background-color: #da2a2a;
+}
+
+.correct p,
+.correct h3,
+.incorrect p,
+.incorrect h3 {
+  color: #fff;
+}
+
+.flipBox {
+  background-color: transparent;
+  width: 600px;
+  height: 65px;
+  perspective: 1000px;
+}
+
+.flipBoxInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip {
+  transform: rotateX(180deg);
+}
+
+.flipBoxFront,
+.flipBoxBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flipBoxBack {
+  transform: rotateX(180deg);
+}

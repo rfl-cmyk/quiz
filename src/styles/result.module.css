@@ -1,0 +1,54 @@
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100vh;
+  background-color: #6147cf;
+}
+
+.result button {
+  padding: 10px 15px;
+  font-size: 12pt;
+  font-weight: 600;
+  background-color: #8e78e9;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.result button:hover {
+  cursor: pointer;
+  background-color: #9b85f1;
+}
+
+.balloons {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.first h2,
+.second h2,
+.third h2 {
+  padding: 50px;
+  border-radius: 20px;
+  font-size: 36pt;
+}
+
+.first h2 {
+  background-color: orange;
+}
+
+.second h2 {
+  background-color: #3bbf5b;
+}
+
+.first p,
+.second p,
+.third p {
+  text-align: center;
+  margin-top: 15px;
+}
